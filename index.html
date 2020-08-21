@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>
       Frontend Mentor | Huddle landing page with single introductory section
     </title>
@@ -19,20 +20,93 @@
     <!-- No dude en eliminar estos estilos o personalizarlos en su propia hoja de estilo 👍 -->
     <style>
       body {
-        background-image: url(images/bg-desktop.svg);
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        background: url(images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: hsl(257, 40%, 49%);
+        color: white;
+        font-family: 'Open Sans', sans-serif;
       }
-      .attribution {
-        font-size: 11px;
-        text-align: center;
+      .logoHead{
+        margin-top: 100px;
+        margin-left: 100px;
       }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
+      .mein{
+        margin: auto;
+        width: 100%;
+        flex-direction: row;
+        display: flex;
+      }
+      .mein__container{
+        justify-content: center;
+        display: flex;        
+      }
+      .mein--image{
+        width: 50%;
+        margin: 80px 0px 0px 100px;
+      }
+      .mein__container--description{
+        margin: 8% 20% 0 50px;
+        flex-direction: column;
+      }
+      .mein__container h1{
+        font-size: 50px;
+        width: 80%;
+        justify-content: center;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+      }
+      .mein__container--button{
+        background-color: white;
+        width: 200px;
+        border: none;
+        border-radius: 30px;
+        color: hsl(257, 40%, 49%);
+        cursor: pointer;
+        font-size: 20px;
+        height: 50px;
+        margin: 10px 0px;
+        outline: none;
+      }
+      .mein__container--button:hover{
+        box-shadow: 10px 5px 5px black;
+      }
+      footer {
+        display: flex;
+        justify-content: space-between;
       }
     </style>
   </head>
   <body>
-    Build The Community Your Fans Will Love Huddle re-imagines the way we build
-    communities. You have a voice, but so does your audience. Create connections
-    with your users as you engage in genuine discussion. Register
+    <header>
+      <img class="logoHead" src="images/logo.svg" alt="logo">
+    </header>
+    <main class="mein">
+      <img class="mein--image" src="images/illustration-mockups.svg" alt="mockup"> 
+    <section class="mein__container">
+       
+      <div class="mein__container--description">
+      <h1>
+        Build The Community
+        Your Fans Will Love
+      </h1>
+        <p>
+          Huddle re-imagines the way we build communities. You have
+          a voice, but so does your audience. Create connections with
+          your users as you engage in genuine discussion.
+        </p>
+        <button class="mein__container--button">Register</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <a href="">F</a>
+    <a href="">T</a>
+    <a href="">G</a>
+  </footer>
   </body>
 </html>
